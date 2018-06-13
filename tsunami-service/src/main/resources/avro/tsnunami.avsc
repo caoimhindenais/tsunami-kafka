@@ -1,0 +1,16 @@
+{
+  "type" : "record",
+  "name" : "Tsnunami",
+  "namespace" : "com.example.tsunamiservice",
+  "doc" : "Schema for com.example.tsunamiservice.Tsnunami",
+  "fields" : [ {
+    "name" : "country",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "height",
+    "type" : [ "null", "double" ]
+  }, {
+    "name" : "localDate",
+    "type" : [ "null", "string" ]
+  } ]
+}
