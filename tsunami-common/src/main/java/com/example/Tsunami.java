@@ -3,33 +3,34 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.tsunamiui;
+package com.example;
 
-import org.apache.avro.message.BinaryMessageDecoder;
-import org.apache.avro.message.BinaryMessageEncoder;
-import org.apache.avro.message.SchemaStore;
+import org.apache.avro.data.RecordBuilderBase;
 import org.apache.avro.specific.SpecificData;
+import org.apache.avro.message.BinaryMessageEncoder;
+import org.apache.avro.message.BinaryMessageDecoder;
+import org.apache.avro.message.SchemaStore;
 
 @SuppressWarnings("all")
-/** Schema for com.example.tsunamiservice.Tsnunami */
+/** Schema for com.example.Tsunami */
 @org.apache.avro.specific.AvroGenerated
-public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+public class Tsunami extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
   private static final long serialVersionUID = -261274228188125342L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Tsnunami\",\"namespace\":\"com.example.tsunamiservice\",\"doc\":\"Schema for com.example.tsunamiservice.Tsnunami\",\"fields\":[{\"name\":\"country\",\"type\":[\"null\",\"string\"]},{\"name\":\"height\",\"type\":[\"null\",\"double\"]},{\"name\":\"localDate\",\"type\":[\"null\",\"string\"]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Tsunami\",\"namespace\":\"com.example\",\"doc\":\"Schema for com.example.Tsunami\",\"fields\":[{\"name\":\"country\",\"type\":[\"null\",\"string\"]},{\"name\":\"height\",\"type\":[\"null\",\"double\"]},{\"name\":\"localDate\",\"type\":[\"null\",\"string\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
 
-  private static final BinaryMessageEncoder<Tsnunami> ENCODER =
-      new BinaryMessageEncoder<Tsnunami>(MODEL$, SCHEMA$);
+  private static final BinaryMessageEncoder<Tsunami> ENCODER =
+      new BinaryMessageEncoder<Tsunami>(MODEL$, SCHEMA$);
 
-  private static final BinaryMessageDecoder<Tsnunami> DECODER =
-      new BinaryMessageDecoder<Tsnunami>(MODEL$, SCHEMA$);
+  private static final BinaryMessageDecoder<Tsunami> DECODER =
+      new BinaryMessageDecoder<Tsunami>(MODEL$, SCHEMA$);
 
   /**
    * Return the BinaryMessageDecoder instance used by this class.
    */
-  public static BinaryMessageDecoder<Tsnunami> getDecoder() {
+  public static BinaryMessageDecoder<Tsunami> getDecoder() {
     return DECODER;
   }
 
@@ -37,17 +38,17 @@ public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implem
    * Create a new BinaryMessageDecoder instance for this class that uses the specified {@link SchemaStore}.
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
    */
-  public static BinaryMessageDecoder<Tsnunami> createDecoder(SchemaStore resolver) {
-    return new BinaryMessageDecoder<Tsnunami>(MODEL$, SCHEMA$, resolver);
+  public static BinaryMessageDecoder<Tsunami> createDecoder(SchemaStore resolver) {
+    return new BinaryMessageDecoder<Tsunami>(MODEL$, SCHEMA$, resolver);
   }
 
-  /** Serializes this Tsnunami to a ByteBuffer. */
+  /** Serializes this Tsunami to a ByteBuffer. */
   public java.nio.ByteBuffer toByteBuffer() throws java.io.IOException {
     return ENCODER.encode(this);
   }
 
-  /** Deserializes a Tsnunami from a ByteBuffer. */
-  public static Tsnunami fromByteBuffer(
+  /** Deserializes a Tsunami from a ByteBuffer. */
+  public static Tsunami fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
@@ -61,7 +62,7 @@ public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implem
    * to their default values from the schema.  If that is desired then
    * one should use <code>newBuilder()</code>.
    */
-  public Tsnunami() {}
+  public Tsunami() {}
 
   /**
    * All-args constructor.
@@ -69,7 +70,7 @@ public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implem
    * @param height The new value for height
    * @param localDate The new value for localDate
    */
-  public Tsnunami(CharSequence country, Double height, CharSequence localDate) {
+  public Tsunami(CharSequence country, Double height, CharSequence localDate) {
     this.country = country;
     this.height = height;
     this.localDate = localDate;
@@ -146,36 +147,36 @@ public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
-   * Creates a new Tsnunami RecordBuilder.
-   * @return A new Tsnunami RecordBuilder
+   * Creates a new Tsunami RecordBuilder.
+   * @return A new Tsunami RecordBuilder
    */
   public static Builder newBuilder() {
     return new Builder();
   }
 
   /**
-   * Creates a new Tsnunami RecordBuilder by copying an existing Builder.
+   * Creates a new Tsunami RecordBuilder by copying an existing Builder.
    * @param other The existing builder to copy.
-   * @return A new Tsnunami RecordBuilder
+   * @return A new Tsunami RecordBuilder
    */
   public static Builder newBuilder(Builder other) {
     return new Builder(other);
   }
 
   /**
-   * Creates a new Tsnunami RecordBuilder by copying an existing Tsnunami instance.
+   * Creates a new Tsunami RecordBuilder by copying an existing Tsunami instance.
    * @param other The existing instance to copy.
-   * @return A new Tsnunami RecordBuilder
+   * @return A new Tsunami RecordBuilder
    */
-  public static Builder newBuilder(Tsnunami other) {
+  public static Builder newBuilder(Tsunami other) {
     return new Builder(other);
   }
 
   /**
-   * RecordBuilder for Tsnunami instances.
+   * RecordBuilder for Tsunami instances.
    */
-  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Tsnunami>
-    implements org.apache.avro.data.RecordBuilder<Tsnunami> {
+  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Tsunami>
+    implements org.apache.avro.data.RecordBuilder<Tsunami> {
 
     private CharSequence country;
     private Double height;
@@ -192,35 +193,35 @@ public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implem
      */
     private Builder(Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.country)) {
+      if (RecordBuilderBase.isValidValue(fields()[0], other.country)) {
         this.country = data().deepCopy(fields()[0].schema(), other.country);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.height)) {
+      if (RecordBuilderBase.isValidValue(fields()[1], other.height)) {
         this.height = data().deepCopy(fields()[1].schema(), other.height);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.localDate)) {
+      if (RecordBuilderBase.isValidValue(fields()[2], other.localDate)) {
         this.localDate = data().deepCopy(fields()[2].schema(), other.localDate);
         fieldSetFlags()[2] = true;
       }
     }
 
     /**
-     * Creates a Builder by copying an existing Tsnunami instance
+     * Creates a Builder by copying an existing Tsunami instance
      * @param other The existing instance to copy.
      */
-    private Builder(Tsnunami other) {
+    private Builder(Tsunami other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.country)) {
+      if (RecordBuilderBase.isValidValue(fields()[0], other.country)) {
         this.country = data().deepCopy(fields()[0].schema(), other.country);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.height)) {
+      if (RecordBuilderBase.isValidValue(fields()[1], other.height)) {
         this.height = data().deepCopy(fields()[1].schema(), other.height);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.localDate)) {
+      if (RecordBuilderBase.isValidValue(fields()[2], other.localDate)) {
         this.localDate = data().deepCopy(fields()[2].schema(), other.localDate);
         fieldSetFlags()[2] = true;
       }
@@ -345,9 +346,9 @@ public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implem
 
     @Override
     @SuppressWarnings("unchecked")
-    public Tsnunami build() {
+    public Tsunami build() {
       try {
-        Tsnunami record = new Tsnunami();
+        Tsunami record = new Tsunami();
         record.country = fieldSetFlags()[0] ? this.country : (CharSequence) defaultValue(fields()[0]);
         record.height = fieldSetFlags()[1] ? this.height : (Double) defaultValue(fields()[1]);
         record.localDate = fieldSetFlags()[2] ? this.localDate : (CharSequence) defaultValue(fields()[2]);
@@ -359,8 +360,8 @@ public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumWriter<Tsnunami>
-    WRITER$ = (org.apache.avro.io.DatumWriter<Tsnunami>)MODEL$.createDatumWriter(SCHEMA$);
+  private static final org.apache.avro.io.DatumWriter<Tsunami>
+    WRITER$ = (org.apache.avro.io.DatumWriter<Tsunami>)MODEL$.createDatumWriter(SCHEMA$);
 
   @Override public void writeExternal(java.io.ObjectOutput out)
     throws java.io.IOException {
@@ -368,8 +369,8 @@ public class Tsnunami extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumReader<Tsnunami>
-    READER$ = (org.apache.avro.io.DatumReader<Tsnunami>)MODEL$.createDatumReader(SCHEMA$);
+  private static final org.apache.avro.io.DatumReader<Tsunami>
+    READER$ = (org.apache.avro.io.DatumReader<Tsunami>)MODEL$.createDatumReader(SCHEMA$);
 
   @Override public void readExternal(java.io.ObjectInput in)
     throws java.io.IOException {

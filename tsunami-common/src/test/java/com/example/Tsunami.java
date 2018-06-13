@@ -1,8 +1,8 @@
-package com.example.tsunamiservice;
+package com.example;
 
 import java.time.LocalDate;
 
-public class Tsnunami {
+public class Tsunami {
 
 
     String localDate;
@@ -33,7 +33,7 @@ public class Tsnunami {
         this.height = height;
     }
 
-    public Tsnunami( String country, Double height,String localDate) {
+    public Tsunami( String country, Double height,String localDate) {
         this.localDate = localDate;
         this.country = country;
         this.height = height;

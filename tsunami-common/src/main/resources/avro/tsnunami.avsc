@@ -1,8 +1,8 @@
 {
   "type" : "record",
-  "name" : "Tsnunami",
-  "namespace" : "com.example.tsunamiservice",
-  "doc" : "Schema for com.example.tsunamiservice.Tsnunami",
+  "name" : "Tsunami",
+  "namespace" : "com.example",
+  "doc" : "Schema for com.example.Tsunami",
   "fields" : [ {
     "name" : "country",
     "type" : [ "null", "string" ]

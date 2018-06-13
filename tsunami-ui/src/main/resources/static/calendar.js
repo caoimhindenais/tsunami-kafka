@@ -29,11 +29,33 @@ Highcharts.chart('container', {
         type: 'spline'
     },
     title: {
-        text: 'Live Tsunami Data (JSON)'
+        text: 'Tsunami Data'
+    },
+
+    yAxis: {
+        type: 'logarithmic',
+        title: {
+            enabled: true,
+            text: 'Wave height',
+            style: {
+                fontWeight: 'normal'
+            }
+        }
+        //minorTickInterval: 0.1
+    },
+
+    xAxis: {
+        title: {
+            enabled: true,
+            text: 'Year-Month',
+            style: {
+                fontWeight: 'normal'
+            }
+        }
     },
 
     subtitle: {
-        text: 'Data input from a remote Tsunami json'
+        text: 'Data input from Kafka Topic'
     },
 
 

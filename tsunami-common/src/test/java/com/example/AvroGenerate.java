@@ -1,4 +1,4 @@
-package com.example.tsunamiservice;
+package com.example;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,7 +13,7 @@ public class AvroGenerate {
     public void test() throws JsonMappingException {
         ObjectMapper mapper = new ObjectMapper(new AvroFactory());
         AvroSchemaGenerator gen = new AvroSchemaGenerator();
-        mapper.acceptJsonFormatVisitor(Tsnunami.class, gen);
+        mapper.acceptJsonFormatVisitor(Tsunami.class, gen);
         com.fasterxml.jackson.dataformat.avro.AvroSchema schemaWrapper = gen.getGeneratedSchema();
         org.apache.avro.Schema avroSchema = schemaWrapper.getAvroSchema();
         String asJson = avroSchema.toString(true);
