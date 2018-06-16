@@ -4,6 +4,9 @@ public class Wave {
 
     String year;
     Double height;
+    String country;
+
+
 
     public String getYear() {
         return year;
@@ -21,9 +24,18 @@ public class Wave {
         this.height = height;
     }
 
-    public Wave(String year, Double height) {
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public Wave(String country,String year, Double height) {
         this.year = year;
         this.height = height;
+        this.country = country;
     }
 }
 

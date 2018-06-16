@@ -12,6 +12,7 @@
         <module>tsunami-common</module>
         <module>tsunami-service</module>
         <module>tsunami-ui</module>
+        <module>tsunami-stream</module>
     </modules>
 
 </project>
